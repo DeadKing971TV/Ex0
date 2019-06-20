@@ -5,7 +5,7 @@ const ytdl = require('ytdl-core');
 const token = process.env.token;
 
 
-bot.login(token)
+client.login(token)
 
 
 let prefix = "!";
