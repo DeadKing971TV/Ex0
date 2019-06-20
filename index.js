@@ -13,8 +13,6 @@ client.on("ready", function() {
     console.log("Connected")
 });
 
-bot.login;
-
 client.on("message", message =>{
     if(message.content === prefix + "fbs"){
         message.reply("Va voir dans les messages épinglés du salon #stats-bot ! :pushpin:");
