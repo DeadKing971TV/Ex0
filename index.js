@@ -13,7 +13,7 @@ client.on("ready", function() {
     console.log("Connected")
 });
 
-bot.login(token);
+bot.login();
 
 client.on("message", message =>{
     if(message.content === prefix + "fbs"){
