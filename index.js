@@ -4,9 +4,16 @@ const client = new Discord.Client();
 const ytdl = require('ytdl-core');
 const token = process.env.token;
 
+
+bot.login(token)
+
+
 let prefix = "!";
 
+
 const warns = JSON.parse(fs.readFileSync('./warns.json'))
+
+
 
 client.on("ready", function() {
     client.user.setActivity("Ex0┃!help", {type:"PLAYING"});
