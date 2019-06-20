@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const fs = require('fs')
 const client = new Discord.Client();
 const ytdl = require('ytdl-core');
+const token = process.env.token;
 
 let prefix = "!";
 
@@ -12,7 +13,7 @@ client.on("ready", function() {
     console.log("Connected")
 });
 
-client.login("NTY3MTQyNDkzNjMyNzI1MDEz.XLPPRw.SV2nAd6FaXIXof6dLvZQbqI7QQU");
+bot.login(token);
 
 client.on("message", message =>{
     if(message.content === prefix + "fbs"){
